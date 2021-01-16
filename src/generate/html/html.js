@@ -17,7 +17,9 @@ const MARKDOWN_OPTIONS_DEFAULT = {
 
 const handleTargetProject = (project, markdownOptions) => {
   const targetMarkdown = project + "/main.md";
-  const targetImage = project + "/main.png";
+  //const targetImage = project + "/main.png";
+  const targetImage = `https://github.com/mcclowes/portfolio/blob/main/${project}/main.png?raw=true`
+  //https://github.com/mcclowes/portfolio/blob/main/src/projects/workshare/main.png?raw=true
 
   return createHtmlPages(readMarkdownFile(targetMarkdown, markdownOptions), targetImage);
 };

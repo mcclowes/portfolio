@@ -163,9 +163,7 @@ hr {
 }
 
 .page-content img {
-  width: 130%;
-  position: relative;
-  left: -25%;
+  width: 100%;
 }
 
 .pdf .page,
